@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -10,6 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: "DM Sans";
 }
 
 :root{
@@ -29,10 +32,7 @@ body{
 .container{
     display: flex;
     flex-flow: column nowrap;
-    margin: auto;
-    /* width: 30%;
-    height: 30%; */
-
+    margin: 1rem;
 }
 
 /* Balance Component */
@@ -41,19 +41,34 @@ body{
     margin-bottom: 1rem;
     height: 100px;
     border-radius: var(--corners);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 2.2rem;
+}
+
+.balance-title,
+.balance-total{
+    color: #fafafaed;
+    margin: 0.4rem 0;
+}
+
+.balance-total{
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 /* Spending Component */
 .spending-box{
-    background-color: #fafafa;
+    background-color: #fafafaed;
     height: 400px;
     border-radius: var(--corners);
-    padding: 1.5rem 2rem 2rem;
+    padding: 1.5rem 2.2rem 2rem;
 }
 
-
 footer{
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .attribution { 
