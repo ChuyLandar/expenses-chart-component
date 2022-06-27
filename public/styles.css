@@ -180,3 +180,43 @@ footer{
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+@media (max-width: 540px){
+    #root{
+        width: 100%;
+    }
+
+    .balance-box{
+        padding: 3.5rem 1.2rem;
+    }
+
+    .spending-box{
+        padding: 1.5rem 1.2rem 2rem;
+    }
+
+    .bar-data{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 280px){
+    #root{
+        width: 100%;
+    }
+
+    .balance-box{
+        padding: 3.5rem 1.2rem;
+    }
+
+    .spending-box{
+        padding: 1.5rem 1.2rem 2rem;
+    }
+
+    .bar-data{
+        font-size: 8px;
+    }
+
+    *{
+        font-size: 0.7rem;
+    }
+}
