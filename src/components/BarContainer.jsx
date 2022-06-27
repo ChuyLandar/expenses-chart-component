@@ -3,7 +3,8 @@ import React, {useState} from 'react';
 function BarContainer(props){
     const [isShown, setIsShown] = useState(false);
     const customStyle = {
-        backgroundColor: ""
+        backgroundColor: "",
+        height: props.height
     };
     
     if (props.currentDay === props.barDay) {
